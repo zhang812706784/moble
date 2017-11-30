@@ -1,0 +1,16 @@
+.wrapper{
+	position:relative;
+	width:400px;
+	height:300px;
+	margin:10px auto 0;
+	overflow: hidden;
+}
+.mov{
+	height:300px;
+	position: absolute;
+	left:0; top:0;
+}
+.item{
+	width:400px; height:300px;
+	float:left;
+}
