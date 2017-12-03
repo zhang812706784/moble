@@ -329,4 +329,127 @@ footer section .bottom {
   height: 0;
   line-height: 0;
 }
-
+/*��ҳ���м�ƫ�²���*/
+body {
+  background: #f9f9f9;
+}
+header {
+  background: #fa3432;
+  height: 0.94rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.27rem;
+  padding: 0 0.3rem;
+}
+header img {
+  width: 0.48rem;
+  height: 0.41rem;
+}
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0.27rem;
+}
+.list section:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.list div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-left: 0.3rem;
+  margin-right: 0.21rem;
+  background: #FF7900;
+  border-radius: 20%;
+}
+.list img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.58rem;
+  height: 0.58rem;
+  background: #FF7900;
+}
+.list h2 {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.27rem;
+  color: #4c4b4b;
+}
+.list div:last-child {
+  height: 0.8rem;
+  margin-right: 0.37rem;
+}
+.list #demo16 {
+  position: relative;
+  top: 0.3rem;
+}
+.list #demo16:after,
+.list #demo16:before {
+  border: 0.1rem solid transparent;
+  border-left: 0.25rem solid #f9f9f9;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: -0.2rem;
+  content: '';
+}
+.list #demo16:before {
+  border-left-color: #FF7900;
+  right: -0.25rem;
+}
+.phone {
+  height: 1.28rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0.3rem;
+}
+.phone img {
+  width: 0.78rem;
+  height: 0.8rem;
+  display: inline-block;
+  padding-right: 0.28rem;
+}
+.phone h1:nth-child(1) {
+  font-size: 0.3rem;
+}
+.phone h1:nth-child(1) span {
+  color: #062ce0;
+}
+.phone h1:nth-child(2) {
+  font-size: 0.23rem;
+  color: gainsboro;
+}
+.margin {
+  margin-top: 0.25rem;
+}

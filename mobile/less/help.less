@@ -1,0 +1,100 @@
+@import "index.less";
+body{
+    background: #f9f9f9;
+}
+.flex_wrap(@display:flex;@jus:center){
+    display:@display;
+    justify-content: @jus;
+}
+header{
+    background: #fa3432;
+    height: 0.94rem;
+    color: white;
+    .flex_wrap(flex;space-between);
+    align-items: center;
+    font-size:0.27rem;
+    padding:0 0.3rem;
+    img{
+        width:0.48rem;
+        height:0.41rem;
+    }
+}
+.list{
+    .flex_wrap(flex;space-between);
+    margin-top: 0.27rem;
+    & section:nth-child(1){
+        .flex_wrap;
+    }
+    & div:nth-child(1){
+        .flex_wrap;
+        align-items: center;
+        width: 0.8rem;
+        height: 0.8rem;
+        margin-left: 0.3rem;
+        margin-right: 0.21rem;
+        background: #FF7900;
+        border-radius: 20%;
+    }
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 0.58rem;
+        height: 0.58rem;
+        background: #FF7900;
+    }
+    h2{
+        height: 0.8rem;
+        line-height: 0.8rem;
+        font-size: 0.27rem;
+        color: #4c4b4b;
+    }
+    & div:last-child{
+        height: 0.8rem;
+        margin-right: 0.37rem;
+    }
+    #demo16{
+        position: relative;
+        top:0.3rem;
+    }
+    #demo16:after, #demo16:before {
+        border: 0.1rem solid transparent;
+        border-left: 0.25rem solid #f9f9f9;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        right: -0.2rem;
+        content: ''
+    }
+
+    #demo16:before {
+        border-left-color: #FF7900;
+        right: -0.25rem;
+    }
+}
+.phone{
+    height:1.28rem;
+    background: white;
+    display:flex;
+    align-items: center;
+    padding-left: 0.3rem;
+    img{
+        width:0.78rem;
+        height:0.8rem;
+        display:inline-block;
+        padding-right:0.28rem;
+    }
+    h1:nth-child(1){
+        font-size: 0.3rem;
+        span{
+            color: #062ce0;
+        }
+    }
+    h1:nth-child(2){
+        font-size: 0.23rem;
+        color:gainsboro;
+    }
+}
+.margin {
+    margin-top: 0.25rem;
+}

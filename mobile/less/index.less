@@ -35,9 +35,19 @@ header{
 
 }
 .lubo_wrap{
-
+    position:relative;
+    width:100%;
+    height: 3.62rem;
     img{
-        height:3.63rem;
+        width:100%;
+        max-width: 100%;
+    }
+    .swiper-pagination-bullet{
+        width:0.18rem;
+        height: 0.18rem;
+    }
+    .swiper-pagination-bullet-active{
+        background: white;
     }
 }
 .icon_list{
@@ -60,5 +70,199 @@ header{
         height: 0.96rem;
     }
 }
+/*热门产品以下部分所有容器*/
+.confx(@flex:flex;@jus:space-between;@align:center){
+    display:@flex;
+    justify-content: @jus;
+    align-items: @align;
 
+}
+.contaier{
+    background: #f9f9f9;
+    position: relative;
+    padding: 0rem 0.23rem;
+    .hotTitleCon{
+        .confx;
+        height: 0.95rem;
+        img{
+            display:inline-block;
+            vertical-align: middle;
+            padding-right: 0.2rem;
+        }
+        span{
+            font-size: 0.3rem;
+            color: #494849;
+            display:inline-block;
+        }
+        >span:last-child{
+            color: #9a9b9c;
+        }
+    }
+    /*盈信计划*/
+    .yinXinPlanCon{
+        background: white;
+        outline:2px #e9e9e8 solid;
+        height:2.55rem;
+        padding:0.25rem 0.22rem 0.00rem 0.25rem;
+        .yinxinFont{
+            .confx;
+            padding-bottom:0.28rem;
+            >h1{
+                font-size:0.25rem;
+                color:#494948;
+                font-weight: bold;
+                vertical-align: middle;
+            }
+            .returnMoney{
+                width:0.85rem;
+                height:0.3rem;
+                display:inline-block;
+                background: #FFAB37;
+                text-align: center;
+                color:#f9f9f9;
+                line-height: 0.3rem;
+                vertical-align: middle;
+                border-radius: 8%;
+            }
+            .v{
+                display:inline-block;
+
+                background: #FF7404;
+                width:0.33rem;
+                height:0.3rem;
+                border-radius: 8%;
+            }
+
+        }
+        .fontAndChart{
+             .confx;
+             padding-left:0.43rem;
+             &>div>span:nth-child(1){
+                font-size:0.38rem;
+                color:#FB4034;
+             };
+             &>div>span:nth-child(2){
+                 font-size:0.24rem;
+                 color:#FF7900;
+             }
+             h1{
+                 color:#9a9b9c;
+                 font-size:0.3rem;
+                 padding-bottom: 0.27rem;
+             }
+             h1>strong{
+                 color:#3d3c3c;
+             }
+
+        }
+
+
+    }
+    .margin{
+        margin-top: 0.25rem;
+    }
+    .qiyedontai{
+        height: 0.95rem;
+        line-height: 0.95rem;
+        img{
+            display:inline-block;
+            padding-right: 0.2rem;
+        }
+        span{
+            font-size: 0.3rem;
+            color: #494849;
+            vertical-align: middle;
+            display:inline-block;
+        }
+    }
+
+}
+/*企业动态下半部分--展示图片的地方*/
+.picturesCon{
+    width:100%;
+    border-top:2px solid #e9e9e8;
+    border-bottom:2px solid #e9e9e8;
+    background: white;
+    padding-top:0.35rem;
+    .item{
+        display:flex;
+        justify-content: space-between;
+        margin:0 0.23rem 0.35rem;
+        color: #9a9b9c;
+        .imgCon{
+            img{
+                width:1.2rem;
+                height:1.2rem;
+                border-radius: 25%;
+            }
+            padding-right: 0.23rem;
+
+        }
+        >div:first-child{
+            display:flex;
+            .fontCon{
+                display:flex;
+                flex-direction: column;
+                h1:nth-child(1){
+                    color: #494848;
+                    font-size:0.30rem;
+                    margin-bottom: 0.20rem;
+                }
+            }
+        }
+        &>div:nth-child(2) span{
+            display:inline-block;
+            margin-top: 0.66rem;
+        }
+    }
+}
+/*底部*/
+footer{
+    .footFlex{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+    width:100%;
+    background: #f9f9f9;
+    height:1.88rem;
+    padding-top: 0.23rem;
+    & section{
+        display:flex;
+        flex-direction: column;
+        background:white;
+        width:100%;
+        height:1.65rem;
+
+        padding-top:0.45rem;
+        border-top:2px solid #e9e9e8;
+        border-bottom:2px solid #e9e9e8;
+        .top{
+            .footFlex;
+            color:#494848;
+            font-size: 0.28rem;
+            margin-bottom: 0.2rem;
+            & span{
+                 margin-left: 0.1rem;
+
+            }
+        }
+        .bottom{
+            .footFlex;
+            color: #9a9b9c;
+            font-size: 0.26rem;
+        }
+    }
+
+}
+.clearFix:after{
+    content: '';
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+}
+
+/*主页的中间偏下部分*/
 

@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <title></title>
+    <link rel="stylesheet" href="../swiper/css/swiper.min.css">
     <link rel="stylesheet" href="../css/iconfont.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-
-    <header>
+     <header>
         <h1>
             <img src="../img/login_img.png">
             <span>招财猫理财</span>
@@ -29,10 +31,17 @@
         <h1>我要投资</h1>
         <h1>账户中心</h1>
     </section>
-    <!--轮播图-->
+    <!--begin轮播图-->
     <section class="lubo_wrap">
-        <img src="../img/home_regbanner.png">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../img/home_regbanner.png"></div>
+            <div class="swiper-slide"><img src="../img/banner20170225.jpg"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        <!---->
     </section>
+     <!--end轮播图-->
     <nav class="icon_list">
         <ul>
             <li>
@@ -50,10 +59,165 @@
             </li>
         </ul>
     </nav>
-    <script src="../js/rem.js"></script>
-    <script src="../js/zepto/zepto.js"></script>
-    <script src="../js/zepto/event.js"></script>
-    <script src="../js/zepto/touch.js"></script>
-    <script src="../js/mobileEvent.js"></script>
+     <!--热门产品和企业产品容易和footer容器-->
+     <section class="contaier">
+        <section class="hotTitleCon">
+            <div>
+                <img src="../img/home_ico_09.png"><span>热门产品</span>
+            </div>
+            <span>更多</span>
+        </section>
+         <!--盈信计划-->
+         <section class="yinXinPlanCon">
+             <!--上半部分-->
+             <div class="yinxinFont">
+                 <h1>
+                     盈信计划2467号1期
+                 </h1>
+                 <div>
+                     <span class="returnMoney">返现金</span>
+                     <img class="v" src="../img/reward_icon_3.png">
+                 </div>
+             </div>
+             <!--下半部分-->
+             <div class="fontAndChart">
+                 <div>
+                     <span>9.2%</span>
+                     <span>+0.5%</span>
+                 </div>
+                 <div>
+                     <h1><strong>180</strong>天</h1>
+                     <h1>投资期限</h1>
+                 </div>
+                 <div>
+                     <canvas class="loader" width="200" height="200"></canvas>
+                 </div>
+             </div>
+         </section>
+         <!--助企计划-->
+         <section class="yinXinPlanCon margin">
+             <!--上半部分-->
+             <div class="yinxinFont">
+                 <h1>
+                     助企计划2365号9期
+                 </h1>
+                 <div>
+                     <span class="returnMoney">返现金</span>
+                     <img class="v" src="../img/reward_icon_3.png">
+                 </div>
+             </div>
+             <!--下半部分-->
+             <div class="fontAndChart">
+                 <div>
+                     <span>11%</span>
+                     <span>+0.5%</span>
+                 </div>
+                 <div>
+                     <h1><strong>365</strong>天</h1>
+                     <h1>投资期限</h1>
+                 </div>
+                 <div>
+                     <canvas class="loader_zhuji" width="200" height="200"></canvas>
+                 </div>
+             </div>
+         </section>
+         <!--盈利计划2-->
+         <section class="yinXinPlanCon margin">
+             <!--上半部分-->
+             <div class="yinxinFont">
+                 <h1>
+                     盈利计划2368号8期
+                 </h1>
+                 <div>
+                     <span class="returnMoney">返现金</span>
+                     <img class="v" src="../img/reward_icon_3.png">
+                 </div>
+             </div>
+             <!--下半部分-->
+             <div class="fontAndChart">
+                 <div>
+                     <span>10.5%</span>
+                     <span>+0.5%</span>
+                 </div>
+                 <div>
+                     <h1><strong>300</strong>天</h1>
+                     <h1>投资期限</h1>
+                 </div>
+                 <div>
+                     <canvas class="loader_yingli" width="200" height="200"></canvas>
+                 </div>
+             </div>
+         </section>
+         <!--主页的中间偏下部分-->
+         <!--企业动态-->
+         <section class="qiyedontai">
+             <img src="../img/home_ico_10.png"><span>企业动态</span>
+         </section>
+
+     </section>
+     <!--企业动态下半部分--展示图片的地方-->
+     <section class="picturesCon">
+         <section class="item">
+             <div>
+                 <div class="imgCon">
+                     <img src="../img/news20170310144045_植树节专享标题.jpg">
+                 </div>
+                 <div class="fontCon">
+                     <h1>春日梦想&nbsp;植树专享</h1>
+                     <h1>来源：招财猫理财</h1>
+                 </div>
+             </div>
+             <div><span>2017-03-10</span></div>
+         </section>
+         <section class="item">
+             <div>
+                 <div class="imgCon">
+                     <img src="../img/news20170310144045_植树节专享标题.jpg">
+                 </div>
+                 <div class="fontCon">
+                     <h1>春日梦想&nbsp;植树专享</h1>
+                     <h1>来源：招财猫理财</h1>
+                 </div>
+             </div>
+             <div><span>2017-03-10</span></div>
+         </section>
+         <section class="item">
+             <div>
+                 <div class="imgCon">
+                     <img src="../img/news20170310144045_植树节专享标题.jpg">
+                 </div>
+                 <div class="fontCon">
+                     <h1>春日梦想&nbsp;植树专享</h1>
+                     <h1>来源：招财猫理财</h1>
+                 </div>
+             </div>
+             <div><span>2017-03-10</span></div>
+         </section>
+     </section>
+     <footer>
+         <section>
+             <div class="top">
+                 <span>
+                     触屏版
+                 </span>
+                 <span>|</span>
+                 <span>电脑版</span>
+                 <span>|</span>
+
+                 <span>app下载</span>
+             </div>
+             <div class="bottom">
+                 <span>2017招财猫理财&nbsp;浙ICP备14041616号</span>
+             </div>
+         </section>
+     </footer>
+     <script src="../js/rem.js"></script>
+     <script src="../js/zepto/zepto.js"></script>
+     <script src="../js/zepto/event.js"></script>
+     <script src="../js/zepto/touch.js"></script>
+     <script src="../js/mobileEvent.js"></script>
+     <script src="../swiper/js/swiper.min.js"></script>
+     <script src="../js/util/jquery.classyloader.js"></script>
+     <script src="../js/index.js"></script>
 </body>
 </html>
